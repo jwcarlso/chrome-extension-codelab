@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getting started codelab (jwcarlso):",
+  "description": "Shows a Google Image search result for the current page.",
+  "version": "1.0",
+
+  // need trailing comma after browser_action -- otherwise, not valid JSON
+  "browser_action": {
+    "default_icon": "icon.png", // so is this like a flag?
+    "default_popup": "popup.html",
+    "default_title": "Just DO IT" // no trailing comma allowed here. JSON sucks
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
